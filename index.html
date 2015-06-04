@@ -1,12 +1,501 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--[if IE]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Brandon Cranmore</title>
+
+	<!-- CSS -->
+
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="assets/css/animate.css" rel="stylesheet">
+    
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+    
+    <script src="assets/js/modernizr.custom.js"></script>
+       
 </head>
 <body>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<!-- Home start -->
+
+	<section id="home" class="pfblock-image screen-height">
+        
+		<div class="intro">
+			<div class="start"><h1>Brandon Cranmore</h1></div>
+			<h3 class="intro-title">Web Developer | UX/UI Designer</h3>
+	
+			
+		</div>
+<div class="home-overlay"></div>
+        <a href="#services">
+		<div class="scroll-down">
+            <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+		</div>
+        </a>
+
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+    <header class="header">
+        <nav class="navbar navbar-custom" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Brandon Cranmore</a>
+                </div>
+                <div class="collapse navbar-collapse" id="custom-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <!--<li><a href="#services">Services</a></li>-->
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div><!-- .container -->
+        </nav>
+    </header>
+
+	<!-- Navigation end -->
+
+    <!-- Skills start -->
+
+    <section class="pfblock pfblock-gray" id="skills">
+
+        <div class="container">
+
+            <div class="row skills">
+
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+
+                        <div class="pfblock-header wow fadeInUp animated" style="visibility: visible;">
+                            <h2 class="pfblock-title">My Skills</h2>
+                            <div class="pfblock-line"></div>
+                            <div class="pfblock-subtitle">
+
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- .row -->
+
+                <div class="col-sm-6 col-md-3 text-center">
+                    <span data-percent="80" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                        <span class="percent">90</span>
+                        <canvas height="140" width="140"></canvas>
+                    </span>
+                    <h3 class="text-center">HTML</h3>
+                </div>
+                <div class="col-sm-6 col-md-3 text-center">
+                    <span data-percent="90" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                        <span class="percent">80</span>
+                        <canvas height="140" width="140"></canvas>
+                    </span>
+                    <h3 class="text-center">CSS(SCSS)</h3>
+                </div>
+                <div class="col-sm-6 col-md-3 text-center">
+                    <span data-percent="85" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                        <span class="percent">70</span>
+                        <canvas height="140" width="140"></canvas>
+                    </span>
+                    <h3 class="text-center">ASP.NET</h3>
+                </div>
+                <div class="col-sm-6 col-md-3 text-center">
+                    <span data-percent="95" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                        <span class="percent">60</span>
+                        <canvas height="140" width="140"></canvas>
+                    </span>
+                    <h3 class="text-center">UI / UX</h3>
+                </div>
+
+                <div class="col-sm-6 col-md-3 text-center">
+                    <span data-percent="80" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                        <span class="percent">70</span>
+                        <canvas height="140" width="140"></canvas>
+                    </span>
+                    <h3 class="text-center">Systems Admin.</h3>
+                </div>
+                <div class="col-sm-6 col-md-3 text-center">
+                    <span data-percent="90" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                        <span class="percent">50</span>
+                        <canvas height="140" width="140"></canvas>
+                    </span>
+                    <h3 class="text-center">Project Management</h3>
+                </div>
+                <div class="col-sm-6 col-md-3 text-center">
+                    <span data-percent="85" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                        <span class="percent">50</span>
+                        <canvas height="140" width="140"></canvas>
+                    </span>
+                    <h3 class="text-center">Networking</h3>
+                </div>
+                <div class="col-sm-6 col-md-3 text-center">
+                    <span data-percent="95" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                        <span class="percent">55</span>
+                        <canvas height="140" width="140"></canvas>
+                    </span>
+                    <h3 class="text-center">SharePoint</h3>
+                </div>
+            </div><!--End row -->
+
+        </div>
+
+    </section>
+
+    <!-- Skills end -->
+
+    <!-- Services start
+
+	<section id="services" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+                <div class="col-sm-6 col-sm-offset-3">
+   
+                        <div class="pfblock-header wow fadeInUp animated" style="visibility: visible;">
+                            <h2 class="pfblock-title">My Skills</h2>
+                            <div class="pfblock-line"></div>
+                            <div class="pfblock-subtitle">
+
+                            </div>
+                        </div>
+                </div>
+
+			</div>
+
+			<div class="row">
+
+                <div class="col-sm-3">
+                    <div class="iconbox wow slideInLeft">
+                        <div class="iconbox-icon">
+                            <span class="icon-magic-wand"></span>
+                        </div>
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Web Design</h3>
+                            <div class="iconbox-desc">
+                                Good things come to those who wait, but only the things left by those who hustle
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="iconbox wow slideInLeft">
+                        <div class="iconbox-icon">
+                            <span class="icon-puzzle"></span>
+                        </div>
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Web Programming</h3>
+                            <div class="iconbox-desc">
+                                Good things come to those who wait, but only the things left by those who hustle
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="iconbox wow slideInRight">
+                        <div class="iconbox-icon">
+                            <span class="icon-badge"></span>
+                        </div>
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Branding</h3>
+                            <div class="iconbox-desc">
+                                Good things come to those who wait, but only the things left by those who hustle
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="iconbox wow slideInRight">
+                        <div class="iconbox-icon">
+                            <span class="icon-question"></span>
+                        </div>
+                        <div class="iconbox-text">
+                            <h3 class="iconbox-title">Consultation</h3>
+                            <div class="iconbox-desc">
+                                Good things come to those who wait, but only the things left by those who hustle
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+			</div><!-- .row
+		</div><!-- .container
+	</section>
+
+	<!-- Services end -->
+    
+	<!-- Portfolio start -->
+
+    <section id="portfolio" class="pfblock">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-sm-offset-3">
+
+                    <div class="pfblock-header wow fadeInUp animated" style="visibility: visible;">
+                        <h2 class="pfblock-title">My Projects</h2>
+                        <div class="pfblock-line"></div>
+                        <div class="pfblock-subtitle">
+                            A website should tell a story.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!-- .row -->
+
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="grid wow zoomIn animated" style="visibility: visible;">
+                        <figure class="effect-bubba">
+                            <a href="http://squealershickorysmokedbbq.com" target="_blank"><img class="img img-responsive portfolio-image" src="http://squealershickorysmokedbbq.com/img/slide-1.jpg"></a>
+                        </figure>
+                        <h3>Squealer's <span>BBQ</span></h3>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+
+                    <div class="grid wow zoomIn animated" style="visibility: visible;">
+                        <figure class="effect-bubba">
+                            <a href="http://thecolefamilytogetherforbetter.com" target="_blank"><img class="img img-responsive portfolio-image" src="http://thecolefamilytogetherforbetter.com/images/photo_1.jpg"></a>
+                        </figure>
+                        <h3>Together for <span>Better</span></h3>
+                    </div>
+
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+
+                    <div class="grid wow zoomIn animated" style="visibility: visible;">
+                        <figure class="effect-bubba">
+                            <a href="http://kicdevelopment.brandoncranmore.com" target="_blank"><img class="img img-responsive portfolio-image" src="http://kicdevelopment.brandoncranmore.com/img/portlandor.jpg"></a>
+                        </figure>
+                        <h3>KIC <span>Engineering</span></h3>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+
+                    <div class="grid wow zoomIn animated" style="visibility: visible;">
+                        <figure class="effect-bubba">
+                            <a href="http://www.pinchvid.com" target="_blank"><img class="img img-responsive portfolio-image" src="http://www.pinchvid.com/img/portfolio_image.png"></a>
+                        </figure>
+                        <h3>Pinch! <span></span></h3>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div><!-- .contaier -->
+
+    </section>
+
+    <!-- Portfolio end -->
+    <!-- CallToAction start -->
+
+    <section class="calltoaction">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="large-12 large-12 columns">
+                    <h2 class="wow slideInRight animated" data-wow-delay=".1s" style="visibility: visible; -webkit-animation-delay: 0.1s;">ARE YOU READY TO START?</h2>
+                    <div class="calltoaction-decription wow slideInRight animated" data-wow-delay=".2s" style="visibility: visible; -webkit-animation-delay: 0.2s;">
+                        I'm available for freelance projects.
+                    </div>
+                </div>
+
+                <div class="medium-12 large-12 columns calltoaction-btn wow slideInRight animated" data-wow-delay=".3s" style="visibility: visible; -webkit-animation-delay: 0.3s;">
+                    <a href="#contact" class="btn btn-lg">Hire Me</a>
+                </div>
+
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section>
+
+    <!-- CallToAction end -->
+    <!-- Testimonials start
+
+    <section id="testimonials" class="pfblock pfblock-gray">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="small-6 small-offset-3 columns">
+
+                    <div class="pfblock-header wow fadeInUp">
+                        <h2 class="pfblock-title">What my clients say</h2>
+                        <div class="pfblock-line"></div>
+                        <div class="pfblock-subtitle">
+                            No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!-- .row
+
+            <div class="row">
+
+            <div id="cbp-qtrotator" class="cbp-qtrotator">
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/client-1.jpg" alt="client-1" />
+                    <blockquote>
+                      <p>Work with John was a pleasure. He understood exactly what I wanted and created an awesome site for my company.</p>
+                      <footer>Pino Caruso</footer>
+                    </blockquote>
+                </div>
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/client-2.jpg" alt="client-2" />
+                    <blockquote>
+                      <p>I'm really happy with the results. Get 100% satisfaction is difficult but Alex got it without problems.</p>
+                      <footer>Jane Doe</footer>
+                    </blockquote>
+                </div>
+
+            </div>
+
+            </div><!-- .row -->
+    <!-- .row
+    </section>
+
+    <!-- Testimonial end -->
+    <!-- Contact start -->
+
+    <section id="contact" class="pfblock">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-sm-offset-3">
+
+                    <div class="pfblock-header">
+                        <h2 class="pfblock-title">Drop me a line</h2>
+                        <div class="pfblock-line"></div>
+                        <div class="pfblock-subtitle">
+                            A website should tell a story. <br> When you are ready to share yours, drop me a line and let's get started!
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!-- .row -->
+
+            <div class="row">
+
+                <div class="col-sm-6 col-sm-offset-3">
+
+                    <form id="contact-form" role="form">
+                        <div class="ajax-hidden">
+                            <div class="form-group wow fadeInUp animated" style="visibility: visible;">
+                                <label class="sr-only" for="c_name">Name</label>
+                                <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+                            </div>
+
+                            <div class="form-group wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; -webkit-animation-delay: 0.1s; -webkit-animation-name: none;">
+                                <label class="sr-only" for="c_email">Email</label>
+                                <input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+                            </div>
+
+                            <div class="form-group wow fadeInUp" data-wow-delay=".2s" style="visibility: hidden; -webkit-animation-delay: 0.2s; -webkit-animation-name: none;">
+                                <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s" style="visibility: hidden; -webkit-animation-delay: 0.3s; -webkit-animation-name: none;">Send Message</button>
+                        </div>
+                        <div class="ajax-response"></div>
+                    </form>
+
+                </div>
+
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section>
+
+    <!-- Contact end -->
+    <!-- Footer start -->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/becandoo" class="wow fadeInUp" style="visibility: hidden; -webkit-animation-name: none;"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/becandoo" class="wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; -webkit-animation-delay: 0.1s; -webkit-animation-name: none;"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/profile/view?id=189102807&amp;trk=nav_responsive_tab_profile" class="wow fadeInUp" data-wow-delay=".2s" style="visibility: hidden; -webkit-animation-delay: 0.2s; -webkit-animation-name: none;"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="http://codepen.io/becandoo/" class="wow fadeInUp" data-wow-delay=".5s" style="visibility: hidden; -webkit-animation-delay: 0.5s; -webkit-animation-name: none;"><i class="fa fa-codepen"></i></a></li>
+                        <li><a href="http://stackoverflow.com/users/2930669/becandoo" class="wow fadeInUp" data-wow-delay=".5s" style="visibility: hidden; -webkit-animation-delay: 0.5s; -webkit-animation-name: none;"><i class="fa fa-stack-overflow"></i></a></li>
+                    </ul>
+
+                    <p class="copyright">
+                        © 2015 Brandon Cranmore | Images: <a href="https://unsplash.com/">Unsplash</a>
+                    </p>
+
+                </div>
+
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </footer>
+
+    <!-- Footer end -->
+    <!-- Scroll to top -->
+
+    <div class="scroll-up" style="display: block;">
+        <a href="#home"><i class="fa fa-angle-up"></i></a>
+    </div>
+
+    <!-- Scroll to top end-->
+<script>
+$(document).foundation();
+</script>
+	<!-- Javascript files -->
+<script src="assets/foundation/js/foundation.min.js"></script>
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.cbpQTRotator.js"></script>
+	<script src="assets/js/custom.js"></script>
+
 </body>
 </html>
