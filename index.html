@@ -417,24 +417,23 @@
             <div class="row">
 
                 <div class="col-sm-6 col-sm-offset-3">
-
-                    <form id="contact-form" role="form">
+                    <form method="post" action="contact.php" id="contactform">
                         <div class="ajax-hidden">
                             <div class="form-group wow fadeInUp animated" style="visibility: visible;">
-                                <label class="sr-only" for="c_name">Name</label>
-                                <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+                                <label class="sr-only" for="name">Name</label>
+                                <input type="text" id="name" class="form-control" name="name" placeholder="Name">
                             </div>
 
                             <div class="form-group wow fadeInUp" data-wow-delay=".1s" style="visibility: hidden; -webkit-animation-delay: 0.1s; -webkit-animation-name: none;">
-                                <label class="sr-only" for="c_email">Email</label>
-                                <input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+                                <label class="sr-only" for="email">Email</label>
+                                <input type="email" id="email" class="form-control" name="email" placeholder="E-mail">
                             </div>
 
                             <div class="form-group wow fadeInUp" data-wow-delay=".2s" style="visibility: hidden; -webkit-animation-delay: 0.2s; -webkit-animation-name: none;">
-                                <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
+                                <textarea class="form-control" id="comment" name="comment" rows="7" placeholder="Message"></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s" style="visibility: hidden; -webkit-animation-delay: 0.3s; -webkit-animation-name: none;">Send Message</button>
+                            <button type="submit" value="Send Message" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s" style="visibility: hidden; -webkit-animation-delay: 0.3s; -webkit-animation-name: none;">Send Message</button>
                         </div>
                         <div class="ajax-response"></div>
                     </form>
