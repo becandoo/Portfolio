@@ -29,6 +29,10 @@ a:hover {
 	color: #999;
 }
 
+.control-group .controls {
+     overflow-x: hidden !important;
+ }
+ 
 /* ---------------------------------------------- /*
  * Transition elsements
 /* ---------------------------------------------- */
