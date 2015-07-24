@@ -12,7 +12,7 @@ body {
 	font: 300 14px/1.8 'Raleway', sans-serif;
 	color: #666;
 	overflow-x: hidden;
-	width: 100%;
+	min-width:100%
 }
 
 img {
@@ -29,10 +29,6 @@ a:hover {
 	color: #999;
 }
 
-.control-group .controls {
-     overflow-x: hidden !important;
- }
- 
 /* ---------------------------------------------- /*
  * Transition elsements
 /* ---------------------------------------------- */
@@ -773,6 +769,7 @@ textarea.form-control {
 .grid figure img {
 	position: relative;
 	display: block;
+	min-height: 100%;
 	max-width: 100%;
 	margin: 0 auto;
 	box-sizing: border-box;
