@@ -86,11 +86,11 @@ module.exports = function(grunt) {
         src: '**',
         dest: '<%= config.dist %>/assets/css'
       },
-      theme: {
+      images: {
         expand: true,
-        cwd: 'src/assets/',
+        cwd: 'src/assets/images/',
         src: '**',
-        dest: '<%= config.dist %>/assets/css/'
+        dest: '<%= config.dist %>/assets/images/'
       }
     },
 
