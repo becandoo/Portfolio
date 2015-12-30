@@ -1,0 +1,32 @@
+/* Icons */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #212123;
+  color: white;
+  a {
+    color:#fff;
+    background: #82b548;
+    border-radius:4px;
+    text-align:center;
+    text-decoration:none;
+    font-family:fontawesome;
+    position: relative;
+    display: inline-block;
+    width:40px;
+    height:40px;
+    padding-top:12px;
+    margin:0 2px;
+    -o-transition:all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+     -webkit-font-smoothing: antialiased;
+     font-size: 18px;
+  }
+
+  a:hover {
+    background: #3095A7;
+  }
+}

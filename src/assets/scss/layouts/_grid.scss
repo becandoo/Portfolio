@@ -1,0 +1,41 @@
+//end imports
+$screen-sizes: (
+sm,
+md,
+lg,
+xlg
+);
+
+//grid
+@mixin cols($map){
+@each $name in $map {
+  @for $i from 1 to 13 {
+    &-#{$i}{
+        @include span-columns($i);
+      }
+    }
+  }
+}
+
+//grid-offset
+@mixin offset($map){
+@each $name in $map {
+  @for $i from 1 to 13 {
+    &-#{$i}{
+        @include shift($i of 12);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+.grid {
+@include outer-container(1200px);
+width: 1200px;
+    .columns { @include cols($screen-sizes);
+    }
+    .shift{
+        @include offset($screen-sizes);
+    }
+  }
+}

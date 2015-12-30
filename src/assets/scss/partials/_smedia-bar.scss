@@ -1,0 +1,140 @@
+/* -------------------------------------
+-- Reset Styles
+*/
+
+col- {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+col-space {
+  @extend col-;
+  > * + * { margin-top: 1rem; }
+}
+
+
+row- {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+row-space {
+  @extend row-;
+  > * + * { margin-left: 1rem; }
+}
+
+rows- {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+rows-space {
+  @extend rows-;
+  padding: 1rem 0 0 1rem;
+  > * { margin: 0 1rem 1rem 0; }
+}
+div.switchin {
+  @extend row-;
+  a {
+    @extend rows-space;
+    flex: initial;
+    flex-grow: 1;
+    font-size: 0.7rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover label {
+      text-decoration: underline;
+    }
+  }
+  label {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.8em;
+  }
+  i {
+    color: rgba(255,255,255,0.9);
+    font-size: 2em;
+  }
+}
+/* -------------------------------------
+-- SwitchinNav Styles
+*/
+@media screen and (min-width: 769px) {
+  div.switchin {
+    a {
+      font-size: 1rem;
+    }
+    label {
+      color: rgba(255,255,255,0.9);
+      font-size: 0.8em;
+    }
+    i {
+      color: rgba(255,255,255,0.9);
+      font-size: 2em;
+    }
+  }
+}
+/* -------------------------------------
+-- Demo Specific Styles
+*/
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+section {
+  @extend col-space;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    font-size: 11vmin;
+    font-weight: bold;
+    color: rgba(0,0,0,0.87);
+  }
+  h3 {
+    font-style: italic;
+  }
+  p {
+    padding: 0 3rem;
+    line-height: 150%;
+    font-size: 0.8rem;
+  }
+}
+
+div.switchin {
+  a {
+    &:hover {
+      transform: scale(1.025) translatez(0);
+      transition: all .1s;
+    }
+    &:nth-child(1) {
+      background: #006da6;
+      &:hover { background: darken(#006da6, 3%); }
+    }
+    &:nth-child(2) {
+      background: #55acee;
+      &:hover { background: darken(#55acee, 3%); }
+    }
+    &:nth-child(3) {
+      background: #666666;
+      &:hover { background: darken(#666666, 3%); }
+    }
+    &:nth-child(4) {
+      background: #8ba753;
+      &:hover { background: darken(#8ba753, 3%); }
+    }
+    &:nth-child(5) {
+      background: #fe7a15;
+      &:hover { background: darken(#fe7a15, 3%); }
+    }
+    &:nth-child(6) {
+      background: #EA2C2C;
+      &:hover { background: darken(#EA2C2C, 3%); }
+    }
+  }
+}

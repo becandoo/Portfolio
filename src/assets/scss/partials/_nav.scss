@@ -1,0 +1,166 @@
+
+@-webkit-keyframes bugfix {
+  from { padding: 0; }
+  to { padding: 0; }
+}
+
+/* main nav */
+
+/* menu icon */
+
+.menu-icon-container {
+  display: block;
+  float: right;
+  height: 65px;
+  position: relative;
+  z-index: 999999;
+  @include bp(tablet) {
+
+  }
+}
+.menu-icon {
+  cursor: pointer;
+  height: 40px;
+  position: relative;
+  top: 22px; right: 20px;
+  transition: all 0.15s linear;
+  width: 40px;
+}
+.menu-global {
+  backface-visibility: hidden;
+  border-top: 2px solid white;
+  left: 0;
+  position: absolute;
+  transition: all 0.15s linear;
+  width: 96%;
+}
+.menu-top {
+  top: 0px;
+}
+.menu-middle {
+  top: 12px;
+}
+.menu-bottom {
+  top: 24px;
+}
+.menu-top-click {
+  top: 19px;
+  transform: rotate(48deg);
+}
+.menu-middle-click {
+  opacity: 0;
+}
+.menu-bottom-click {
+  top: 19px;
+  transform: rotate(-48deg);
+}
+
+/* gets rid of the browser-created checkbox */
+
+#toggle {
+  position: absolute;
+  left: -4000px;
+}
+
+/* styles the nav position */
+
+.main-nav-container {
+  background: $orange;
+  height: 100%;
+  overflow: auto;
+  right: -95%;
+  padding: 0;
+  position: fixed;
+  width: 250px;
+  transition: all 0.55s ease-in-out 0s;
+  z-index: 1;
+  @include bp(tablet) {
+
+  }
+}
+
+/* styles the nav */
+
+.main-nav {
+  margin: 0;
+  padding: 0;
+  @include bp(tablet) {
+
+  }
+  @include bp(widescreen) {
+
+  }
+}
+
+.main-nav li {
+	border-bottom: 1px solid darken(#555, 5%);
+	display: block;
+  font-size: 1.2rem;
+	height: auto;
+	letter-spacing: 0.1rem;
+	list-style: none;
+	padding: 0;
+	text-align: center;
+  text-transform: uppercase;
+	@include bp(tablet) {
+
+	}
+
+    &:last-child {
+        border: none;
+    }
+}
+
+.main-nav li a {
+  background: $orange;
+  color: #353535;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 40px 0;
+  text-decoration: none;
+  @include bp(tablet) {
+
+  }
+
+  &:hover {
+    background: darken($orange, 3%);
+    @include bp(tablet) {
+      background: none;
+      color: white;
+    }
+  }
+}
+
+/* when the menu is clicked / checkbox checked */
+
+:checked ~ .main-nav-container {
+  right: 0;
+  @include bp(tablet) {
+
+  }
+}
+
+:checked ~ .page-wrap .page-wrap-inner {
+  position: fixed;
+  transform: translateX(-75%);
+  @include bp(tablet) {
+
+  }
+}
+
+.content {
+    height: auto;
+    padding: 10px 15px;
+    width: 100%;
+    @include bp(tablet) {
+
+    }
+    @include bp(widescreen) {
+
+    }
+
+    &::after {
+      @include clearfix;
+    }
+}

@@ -1,0 +1,26 @@
+body {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+hr {
+  height: 2px !important;
+  background: gray;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  color: #212123;
+}
+
+
+@media screen and (min-width: 769px) {
+  hr {
+    margin: 0 15em 2em 15em;
+  }
+}

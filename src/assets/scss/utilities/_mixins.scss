@@ -1,0 +1,30 @@
+/* mixins */
+
+// breakpoints for responsive //
+
+@mixin bp($point) {
+
+  @if () {
+    $bp-tablet: "(min-width: 760px)";
+    $bp-widescreen: "(min-width: 1026px)";
+
+    @if $point == widescreen {
+      @media #{$bp-widescreen} { @content; }
+    }
+    @else if $point == tablet {
+      @media #{$bp-tablet} { @content; }
+    }
+  }
+}
+
+// clearfix
+
+@mixin clearfix {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+@mixin transition($property: all, $speed: 0.55s, $timing: ease, $delay: 0) {
+  transition: $property $speed $timing $delay;
+}

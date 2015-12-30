@@ -1,0 +1,24 @@
+.container {
+  padding: 10px 50px;
+  text-align: center;
+}
+
+.chart {
+  position: relative;
+  margin: 20px 10px;
+  color: #212123;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.skills {
+  text-align: center;
+
+}
