@@ -44,7 +44,12 @@
 //@import "../../bootstrap/scss/carousel";
 //@import "../../bootstrap/scss/utilities";
 **/
+@import "settings";
+@import "mixins";
+@import "reset";
+@import "predefine";
 
-//@import "components/_blog.scss";
-@import "components/blog";
-@import "components/carousel";
+@import "components/home";
+@import "components/header";
+@import "components/banner";
+@import "components/responsive";
